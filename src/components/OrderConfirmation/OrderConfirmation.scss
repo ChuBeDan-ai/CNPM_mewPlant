@@ -1,0 +1,36 @@
+.oder-wrapper {
+    margin-top: 100px;
+    min-height: 100vh;
+    background-color: #eaf7f3; /* Màu nền sáng hơn để làm nổi bật nội dung */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ để tạo chiều sâu */
+    border-radius: 8px; /* Tăng độ bo tròn của các góc */
+}
+
+/* Tiêu đề của xác nhận đơn hàng */
+.order-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333; /* Màu chữ tối hơn để tương phản với nền */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Chi tiết đơn hàng */
+.order-id, .order-time {
+    font-size: 18px;
+    color: #555; /* Màu chữ trung tính cho các thông tin chi tiết */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Thông báo lỗi */
+.error-message {
+    font-size: 16px;
+    color: #e74c3c; /* Màu đỏ để làm nổi bật thông báo lỗi */
+    text-align: center;
+}

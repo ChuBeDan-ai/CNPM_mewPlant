@@ -1,0 +1,162 @@
+.cart-wrapper {
+    min-height: 100vh;
+    margin-top: 80px;
+    padding: 20px;
+    background: linear-gradient(to right, #ece9e6, #ffffff); /* Hiệu ứng nền gradient */
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 36px; /* Kích thước chữ lớn hơn */
+    color: #1a202c; /* Màu chữ tối hơn */
+    text-transform: uppercase; /* Chuyển chữ thành chữ in hoa */
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif; /* Font chữ hiện đại */
+    letter-spacing: 2px; /* Khoảng cách chữ */
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px; /* Bo góc mềm mại hơn */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Tăng độ bóng */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển động và bóng */
+}
+
+.cart-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Tăng bóng khi hover */
+}
+
+.cart-image {
+    width: 100px; /* Kích thước lớn hơn để rõ sản phẩm */
+    height: auto;
+    border-radius: 10px;
+}
+
+.cart-item-center {
+    flex: 1;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif; /* Font chữ thân thiện */
+}
+
+.cart-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 10px; /* Thêm khoảng cách giữa tên và giá */
+}
+
+.cart-price {
+    font-size: 18px;
+    color: #38a169; /* Màu xanh dịu hơn */
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Tăng khoảng cách giữa các nút */
+}
+
+.btn-cart-giam,
+.btn-cart-tang {
+    background: linear-gradient(to right, #48c78e, #00b894); /* Gradient nút */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px; /* Tăng padding để nút lớn hơn */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng chuyển động */
+}
+
+.btn-cart-giam:hover,
+.btn-cart-tang:hover {
+    background: #2ecc71; /* Màu khi hover */
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+}
+
+.remove-button {
+    background: linear-gradient(to right, #ff6b6b, #ee5253); /* Gradient đỏ */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.remove-button:hover {
+    background: #e74c3c;
+    transform: scale(1.1);
+}
+
+.cart-right {
+    margin-top: 30px;
+    padding: 25px;
+    background: linear-gradient(to bottom, #ffffff, #f3f4f6); /* Gradient cho phần thông tin */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cart-header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.cart-header-right-info {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1a202c;
+}
+
+.cart-total {
+    font-size: 22px;
+    font-weight: bold;
+    color: #38a169;
+    margin-top: 15px;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background: linear-gradient(to right, #48c78e, #00b894); /* Gradient nút thanh toán */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.checkout-button:hover {
+    background: #2ecc71;
+    transform: scale(1.05);
+}
+
+.cart-footer-btn {
+    border-radius: 8px;
+    padding: 12px;
+    background: linear-gradient(to right, #48c78e, #00b894);
+    color: #fff;
+    border: none;
+}
+
+.link-product {
+    text-decoration: none;
+    color: #34495e;
+    transition: color 0.3s;
+}
+
+.link-product:hover {
+    color: #1abc9c; /* Đổi màu khi hover */
+}

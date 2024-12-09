@@ -1,0 +1,84 @@
+.sidebar {
+    width: 250px;
+    height: 780px; /* Tự điều chỉnh theo nội dung */
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa, #e4e6eb); /* Gradient nhẹ nhàng */
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng khi hover */
+}
+
+.sidebar:hover {
+    transform: translateY(-5px); /* Hiệu ứng nổi khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Tăng độ bóng */
+}
+
+h3 {
+    color: var(--color-green);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    border-bottom: 2px solid var(--color-green); /* Đường viền đậm hơn */
+    padding-bottom: 6px; /* Khoảng cách dưới chữ */
+}
+
+.sidebar-section {
+    margin-bottom: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.sidebar-section:hover {
+    background-color: #f9f9f9; /* Màu nền nhạt hơn khi hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Đổ bóng tăng thêm */
+}
+
+.sidebar-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.sidebar-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-section li {
+    display: flex;
+    align-items: center; /* Căn giữa nội dung */
+    gap: 10px; /* Khoảng cách giữa checkbox và text */
+}
+
+.sidebar-section input[type="checkbox"] {
+    margin: 10px;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--color-green);
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.sidebar-section input[type="checkbox"]:checked {
+    background-color: var(--color-green);
+    transform: scale(1.1); /* Hiệu ứng phóng to khi chọn */
+}
+
+.sidebar-section label {
+    font-size: 14px;
+    color: #34495e;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.sidebar-section label:hover {
+    color: var(--color-green); /* Đổi màu chữ khi hover */
+}

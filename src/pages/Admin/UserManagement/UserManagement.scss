@@ -1,0 +1,43 @@
+.user-content {
+    display: flex;
+    margin-top: 50px;
+}
+.user-table {
+    margin: 60px 0 0 350px;
+    h2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        .user-tr {
+            color:white;
+            border-radius: 5px;
+            background: linear-gradient(45deg, #004e92, #000428);
+        }
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+    }
+    .error {
+        color: red;
+        margin: 10px 0;
+    }
+}
+.btn-edit,
+.btn-delete {
+    padding: 5px 10px;
+    margin-left: 2px;
+    background: linear-gradient(45deg, #004e92, #000428);
+    border-radius: 5px;
+    color: var(--color-white);
+    border: none;
+    &:hover {
+        background-color: var(--color-green-hover);
+    }
+}

@@ -1,0 +1,74 @@
+.payment-history {
+    margin-top: 80px;
+    min-height: 60vh;
+    padding: 30px;
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9); // Gradient nền xanh lá nhẹ nhàng
+    border-radius: 15px; // Bo tròn góc
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Độ bóng nhẹ
+    transition: background 0.3s ease; // Hiệu ứng chuyển màu nền
+
+    h2 {
+        text-align: center;
+        font-size: 36px; // Kích thước chữ lớn hơn
+        color: #388e3c; // Màu chữ xanh lá đậm
+        margin-bottom: 40px; // Khoảng cách dưới tiêu đề
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); // Hiệu ứng bóng cho chữ
+    }
+
+    .payment-summary {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.9); // Nền trắng trong suốt
+        padding: 20px;
+        border-radius: 10px; // Bo tròn góc
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Độ bóng nhẹ
+        margin-bottom: 30px; // Khoảng cách dưới phần tóm tắt
+        backdrop-filter: blur(5px); // Hiệu ứng làm mờ nền
+
+        p {
+            font-size: 20px; // Kích thước chữ cho thông tin
+            color: #424242; // Màu chữ tối
+            font-weight: bold; // Đậm chữ
+        }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse; // Gộp các đường viền
+        margin-top: 20px;
+
+        thead {
+            background-color: #4caf50; // Màu nền cho tiêu đề bảng
+            color: white;
+
+            th {
+                padding: 15px; // Padding cho các ô tiêu đề
+                text-align: left; // Căn trái cho chữ
+                font-weight: bold; // Đậm chữ
+                border-bottom: 2px solid #388e3c; // Đường viền dưới cho tiêu đề
+            }
+        }
+
+        tbody {
+            tr {
+                &:hover {
+                    background-color: rgba(76, 175, 80, 0.1); // Màu nền khi hover
+                }
+
+                td {
+                    padding: 15px; // Padding cho các ô dữ liệu
+                    border-bottom: 1px solid #ddd; // Đường viền dưới cho các ô
+                    color: #555; // Màu chữ cho ô dữ liệu
+                    transition: background-color 0.3s; // Hiệu ứng chuyển màu nền
+                }
+            }
+        }
+    }
+
+    p {
+        text-align: center; // Căn giữa cho các thông báo
+        font-size: 20px; // Kích thước chữ cho thông báo
+        color: #555; // Màu chữ cho thông báo
+        margin-top: 20px; // Khoảng cách trên cho thông báo
+    }
+}

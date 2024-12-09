@@ -1,0 +1,128 @@
+.intro_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px; /* Thêm padding cho wrapper */
+    background-color: #e8f0f2; /* Màu nền nhẹ hơn để làm nổi bật */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Tăng chiều sâu của wrapper */
+    border-radius: 10px; /* Bo tròn các góc của wrapper */
+}
+
+.intro_container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%; /* Đảm bảo container chiếm toàn bộ chiều rộng */
+    padding: 20px;
+    margin: 5% 0;
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng nếu không đủ chỗ */
+}
+
+.intro_left,
+.intro_right {
+    flex: 1 1 50%; /* Chiếm 50% chiều rộng, cho phép co giãn */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Thêm padding để tạo khoảng cách */
+}
+
+.left_intro_img,
+.right_intro_img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Tăng chiều sâu của hộp */
+    transition: transform 0.4s ease-in-out; /* Hiệu ứng chuyển động mượt mà hơn */
+}
+
+.left_intro_img:hover,
+.right_intro_img:hover {
+    transform: scale(1.1); /* Phóng to hình ảnh khi hover */
+}
+
+.intro_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+    background-color: #fff; /* Màu nền trắng cho phần chi tiết bên phải */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Tăng chiều sâu của hộp */
+}
+
+.intro_title {
+    font-size: 30px; /* Tăng kích thước tiêu đề để làm nổi bật */
+    font-weight: bold;
+    color: #2b6777; /* Màu chữ tương phản mạnh hơn */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.lorem_intro {
+    margin-top: 10px;
+}
+
+.p_intro {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444; /* Màu chữ tối hơn để dễ đọc */
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+    .intro_left,
+    .intro_right {
+        flex: 1 1 100%; /* Chiếm 100% chiều rộng trên màn hình nhỏ */
+        margin-bottom: 20px;
+    }
+
+    .intro_title {
+        font-size: 24px; /* Giảm kích thước tiêu đề trên màn hình nhỏ */
+    }
+
+    .p_intro {
+        font-size: 14px; /* Giảm kích thước văn bản */
+    }
+}
+
+.intro_additional {
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff; /* Màu nền trắng cho phần bổ sung */
+    padding: 20px;
+    border-radius: 12px; /* Tăng độ bo tròn của các góc */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Tăng chiều sâu của hộp */
+}
+
+.additional_title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #27ae60; /* Màu xanh dương tươi sáng cho tiêu đề */
+    margin-bottom: 20px;
+}
+
+.benefits_list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    color: #555; /* Màu chữ trung tính cho danh sách lợi ích */
+
+    li {
+        margin: 10px 0;
+        position: relative;
+        padding-left: 24px; /* Khoảng cách bên trái cho biểu tượng */
+
+        &::before {
+            content: '✔'; /* Biểu tượng cho mỗi mục */
+            position: absolute;
+            left: 0;
+            color: #27ae60; /* Màu cho biểu tượng */
+            font-size: 20px;
+            line-height: 1.6;
+        }
+    }
+}

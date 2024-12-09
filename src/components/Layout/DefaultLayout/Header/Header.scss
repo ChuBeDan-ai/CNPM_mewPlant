@@ -1,0 +1,210 @@
+.header {
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: space-between; // Căn giữa các phần tử
+    align-items: center;
+    padding: 15px 30px; // Giảm padding để thanh navbar gọn gàng hơn
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, padding 0.3s ease; // Hiệu ứng chuyển màu nền và padding
+}
+.title-SP {
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+.header:hover {
+    background-color: rgba(255, 255, 255, 1); // Đổi màu nền khi hover
+    padding: 10px 30px; // Giảm padding khi hover
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s; // Hiệu ứng chuyển động cho logo
+}
+
+.logo:hover {
+    transform: scale(1.1); // Tăng kích thước logo khi hover
+}
+
+.header_nav_list {
+    list-style-type: none;
+    display: flex;
+    gap: 40px; // Tăng khoảng cách giữa các mục
+}
+
+.header_nav_list li {
+    position: relative; // Để tạo hiệu ứng cho đường viền
+}
+
+.header_nav_list li a {
+    color: var(--color-black);
+    text-decoration: none;
+    font-size: 18px; // Tăng kích thước chữ
+    padding: 5px 10px; // Thêm padding cho các liên kết
+    border-radius: 5px; // Bo góc cho các liên kết
+    transition: background-color 0.3s, color 0.3s; // Hiệu ứng chuyển màu nền và chữ
+}
+
+.header_nav_list li a:hover {
+    background-color: var(--color-green); // Đổi màu nền khi hover
+    color: white; // Đổi màu chữ khi hover
+}
+
+.header_search {
+    width: 250px; // Tăng kích thước thanh tìm kiếm
+    height: 45px;
+    position: relative; // Để căn giữa
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: white;
+    transition: box-shadow 0.3s; // Hiệu ứng bóng
+}
+
+.header_search:hover {
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.5); // Hiệu ứng bóng khi hover
+}
+
+.header_search_input {
+   
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 20px; // Thêm padding cho thanh tìm kiếm
+    font-size: 16px;
+    border-radius: 25px 0 0 25px; // Bo góc cho thanh tìm kiếm
+    transition: background-color 0.3s; // Hiệu ứng chuyển màu nền
+}
+
+.header_search_input:focus {
+    background-color: #f9f9f9; // Đổi màu nền khi focus
+}
+
+.header_search_icon {
+    font-size: 22px; // Tăng kích thước biểu tượng tìm kiếm
+    margin-right: 15px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s; // Hiệu ứng chuyển màu
+    width: 40px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.header_search_icon:hover {
+    color: var(--color-green); // Đổi màu khi hover
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+}
+
+.header_cart {
+    margin-right: 5px; // Giảm khoảng cách giữa giỏ hàng và thanh tìm kiếm
+    position: relative;
+}
+
+.header_cart_icon {
+    font-size: 35px; // Tăng kích thước biểu tượng giỏ hàng
+    cursor: pointer;
+
+    transition: transform 0.3s; // Hiệu ứng chuyển động cho giỏ hàng
+}
+
+.header_cart_icon:hover {
+    transform: scale(1.1); // Tăng kích thước khi hover
+}
+
+.header_cart_icon a {
+    color: var(--color-black);
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: var(--color-red);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.btn_header {
+    align-items: center;
+    display: flex;
+}
+
+.btn_header_login,
+.btn_header_register {
+    margin-left: 15px; // Tạo khoảng cách giữa nút Đăng Nhập và Đăng Ký
+}
+
+.btn_login,
+.btn_register {
+    color: white;
+    background-color: var(--color-green);
+    padding: 12px 15px; // Tăng padding cho nút
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s; // Hiệu ứng chuyển màu và chuyển động
+}
+
+.btn_login:hover,
+.btn_register:hover {
+    cursor: pointer;
+    background-color: var(--color-green-hover);
+    transform: scale(1.05); // Tăng kích thước khi hover
+}
+
+.btn_logout {
+    color: var(--color-white);
+    padding: 12px 15px; // Tăng padding cho nút
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-green);
+    transition: background-color 0.3s, transform 0.3s; // Hiệu ứng chuyển màu và chuyển động
+}
+
+.btn_logout:hover {
+    cursor: pointer;
+    background-color: var(--color-green-hover);
+    transform: scale(1.05); // Tăng kích thước khi hover
+}
+
+.icon-user {
+    display: flex;
+    margin-right: 30px; // Giảm khoảng cách giữa biểu tượng người dùng và các nút
+    font-size: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s; // Hiệu ứng chuyển màu cho biểu tượng người dùng
+    color: aqua;
+}
+
+.icon-user:hover {
+    color: var(--color-green); // Đổi màu khi hover
+}
+
+.username {
+    font-size: 16px;
+    position: absolute;
+    display: none;
+    bottom: -45px;
+    background-color: var(--color-black);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--color-white);
+}
+
+.icon-user:hover .username {
+    display: block; // Hiện tên người dùng khi hover
+}

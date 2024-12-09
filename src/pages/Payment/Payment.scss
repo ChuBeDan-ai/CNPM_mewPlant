@@ -1,0 +1,84 @@
+/* Wrapper tổng thể cho trang thanh toán */
+.payment-wrapper {
+    min-height: 100vh;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e9f5f3; /* Thay đổi màu nền sáng hơn */
+}
+
+/* Tiêu đề của trang thanh toán */
+.payment-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px; /* Tăng khoảng cách giữa các phần tử */
+    font-size: 24px; /* Tăng kích thước chữ tiêu đề */
+    font-weight: bold;
+    color: #333; /* Màu chữ tối hơn để tương phản với nền */
+}
+
+/* Form thanh toán */
+.payment-form {
+    width: 400px;
+    padding: 25px; /* Tăng padding để tạo không gian cho nội dung */
+    background-color: #ffffff;
+    border-radius: 8px; /* Tăng độ bo tròn của góc */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Tăng chiều sâu của hộp */
+    margin: 0 auto;
+}
+
+/* Header của form thanh toán */
+.payment-form-header {
+    text-align: center;
+    margin-bottom: 25px; /* Tăng khoảng cách dưới */
+    font-size: 20px; /* Tăng kích thước chữ header */
+    color: #4CAF50; /* Màu chữ nổi bật hơn */
+}
+
+/* Nhóm nhập liệu */
+.form-group {
+    margin-bottom: 20px; /* Tăng khoảng cách giữa các nhóm */
+}
+
+/* Label của nhóm nhập liệu */
+.form-group label {
+    display: block;
+    font-size: 16px; /* Tăng kích thước chữ */
+    font-weight: bold;
+    margin-bottom: 8px; /* Tăng khoảng cách dưới label */
+    color: #555; /* Màu chữ nhạt hơn cho tương phản */
+}
+
+/* Input bên trong nhóm */
+.form-group input {
+    width: 100%;
+    padding: 12px; /* Tăng kích thước padding */
+    font-size: 16px; /* Tăng kích thước chữ */
+    border-radius: 6px; /* Tăng độ bo tròn */
+    border: 1px solid #ccc;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.form-group input:focus {
+    outline: none;
+    box-shadow: 0 0 6px 2px #4CAF50; /* Thay đổi màu sắc của viền focus */
+}
+
+/* Button bên trong nhóm */
+.form-group button {
+    width: 100%;
+    padding: 12px; /* Tăng kích thước padding */
+    font-size: 16px; /* Tăng kích thước chữ */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 6px; /* Tăng độ bo tròn */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.form-group button:hover {
+    background-color: #555; /* Tăng độ sáng khi hover */
+}
